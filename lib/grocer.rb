@@ -16,9 +16,9 @@ def consolidate_cart(cart)
   count = 0
 
   cart.each_with_object([]) do |product, final_cart|
-    new_item? = find_item_by_name_in_collection(product[:item], final_cart)
+    new_item = find_item_by_name_in_collection(product[:item], final_cart)
     if new_item?
-      final_cart[index] = new_item?
+      final_cart[index] == new_item
     end
     binding.pry
   end
