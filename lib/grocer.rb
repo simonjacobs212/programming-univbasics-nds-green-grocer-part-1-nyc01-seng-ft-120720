@@ -13,5 +13,6 @@ end
 
 def consolidate_cart(cart)
   cart.map.with_index(1) do |index,product|
+    binding.pry
   end
 end
