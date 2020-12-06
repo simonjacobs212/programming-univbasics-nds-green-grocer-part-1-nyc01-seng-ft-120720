@@ -13,4 +13,6 @@ end
 
 def consolidate_cart(cart)
   cart.map do |items|
+  end
+  
 end
