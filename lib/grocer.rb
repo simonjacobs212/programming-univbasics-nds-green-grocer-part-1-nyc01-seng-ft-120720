@@ -4,6 +4,8 @@ def find_item_by_name_in_collection(name, collection)
   matching_item = {}
   collection.each do |list|
     list.each do |key, item_name|
+      if item_name == name
+        matching_item << list
     end
   end
 end
