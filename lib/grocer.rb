@@ -1,7 +1,7 @@
 require 'pry'
 
 def find_item_by_name_in_collection(name, collection)
-  collection.any? do |product|
+  collection.select do |product|
     product[:item] == name
   end
 end
