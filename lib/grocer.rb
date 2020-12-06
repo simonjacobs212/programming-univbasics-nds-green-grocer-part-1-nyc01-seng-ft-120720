@@ -20,6 +20,6 @@ def consolidate_cart(cart)
     else
       new_item[:count] += 1
     end
-    binding.pry
+    # binding.pry
   end
 end
