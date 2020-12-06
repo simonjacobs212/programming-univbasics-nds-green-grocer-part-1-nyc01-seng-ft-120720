@@ -16,8 +16,8 @@ def consolidate_cart(cart)
     new_item = find_item_by_name_in_collection(product, final_cart)
     if !new_item
       final_cart[index] = new_item
-    else 
-      
+    else
+
     end
     binding.pry
   end
