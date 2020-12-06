@@ -17,7 +17,7 @@ def consolidate_cart(cart)
     if !new_item
       final_cart << new_item
     else
-
+      puts new_item
     end
     binding.pry
   end
