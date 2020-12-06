@@ -12,9 +12,9 @@ def find_item_by_name_in_collection(name, collection)
 end
 
 def consolidate_cart(cart)
-  final_cart = []
-  cart.each.with_index(1) do |product, index|
-    existing_item = find_item_by_name_in_collection(cart, collection)
-    binding.pry
+  index = 0
+
+  cart.each_with_object([]) do |product|
+    
   end
 end
