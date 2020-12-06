@@ -4,7 +4,6 @@ def find_item_by_name_in_collection(name, collection)
   collection.each do |list|
     matching_item = list.each_with_object({}) do |item, item_name|
       item_name == name
-      binding.pry
     end
   end
   matching_item
