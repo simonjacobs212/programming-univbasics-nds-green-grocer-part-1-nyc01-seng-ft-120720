@@ -7,6 +7,7 @@ def find_item_by_name_in_collection(name, collection)
     end
     if matching_item
       return matching_item
+    end
   end
 end
 
