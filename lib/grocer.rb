@@ -17,8 +17,9 @@ def consolidate_cart(cart)
     binding.pry
     if !new_item
       final_cart << new_item
+      new_item[:count] = 1
     else
-      puts new_item
+      new_item[:count] += 1
     end
   end
 end
