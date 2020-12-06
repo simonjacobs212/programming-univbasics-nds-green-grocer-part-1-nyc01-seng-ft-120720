@@ -6,7 +6,8 @@ def find_item_by_name_in_collection(name, collection)
       if item_name == name
         return list
       end
-    else return nil
+    else
+      return nil
     end
   end
 end
