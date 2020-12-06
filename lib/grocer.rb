@@ -1,7 +1,11 @@
 require 'pry'
 
 def find_item_by_name_in_collection(name, collection)
+  matching_item = {}
   collection.each do |list|
+    list.each do |key, item_name|
+
+    end
 end
 
 def consolidate_cart(cart)
