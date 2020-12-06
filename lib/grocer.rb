@@ -12,12 +12,12 @@ def find_item_by_name_in_collection(name, collection)
 end
 
 def consolidate_cart(cart)
-  index = 0
-
   cart.each_with_object([]) do |product, final_cart|
     new_item = find_item_by_name_in_collection(product, final_cart)
     if !new_item
       final_cart[index] = new_item
+    else 
+      
     end
     binding.pry
   end
