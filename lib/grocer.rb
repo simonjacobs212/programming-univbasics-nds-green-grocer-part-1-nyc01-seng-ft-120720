@@ -6,8 +6,6 @@ def find_item_by_name_in_collection(name, collection)
       binding.pry
       if item_name == name
         return list
-      else
-        return nil
       end
     end
   end
