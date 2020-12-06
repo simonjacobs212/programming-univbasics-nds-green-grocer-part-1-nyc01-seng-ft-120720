@@ -12,6 +12,7 @@ def find_item_by_name_in_collection(name, collection)
 end
 
 def consolidate_cart(cart)
+  index = 0
   cart.map do |product|
     binding.pry
   end
