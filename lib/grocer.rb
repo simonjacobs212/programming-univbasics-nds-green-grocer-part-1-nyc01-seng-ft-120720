@@ -16,7 +16,7 @@ def consolidate_cart(cart)
     new_item = find_item_by_name_in_collection(product, final_cart)
     if !new_item
       product[:count] = 1
-      final_cart << new_item
+      final_cart << product
     else
       new_item[:count] += 1
     end
