@@ -5,8 +5,9 @@ def find_item_by_name_in_collection(name, collection)
     matching_item = list.each_with_object({}) do |item, item_name|
       item_name == name
     end
+    if matching_item
+      return matching_item
   end
-  matching_item
 end
 
 def consolidate_cart(cart)
