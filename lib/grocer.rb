@@ -2,11 +2,12 @@ require 'pry'
 
 def find_item_by_name_in_collection(name, collection)
   collection.each do |list|
-    list.each_with_object({}) do |item, item_name|
+    matching_item = list.each_with_object({}) do |item, item_name|
       item_name == name
       binding.pry
     end
   end
+  matching_item
 end
 
 def consolidate_cart(cart)
