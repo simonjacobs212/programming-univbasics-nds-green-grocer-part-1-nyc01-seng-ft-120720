@@ -5,6 +5,7 @@ def find_item_by_name_in_collection(name, collection)
     matching_item = list.each { |key, item_name| item_name == name }
     if matching_item
       return matching_item
+    end
   end
 end
 
